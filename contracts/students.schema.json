@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "学生化名名册",
+  "type": "object",
+  "required": [
+    "domain",
+    "version",
+    "sample_id",
+    "students"
+  ],
+  "properties": {
+    "domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "sample_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "students": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "ref",
+          "cohort",
+          "plan_id",
+          "enrolled_plan_id"
+        ],
+        "properties": {
+          "ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cohort": {
+            "type": "integer",
+            "minimum": 2000
+          },
+          "plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "enrolled_plan_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "remediation_completed": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

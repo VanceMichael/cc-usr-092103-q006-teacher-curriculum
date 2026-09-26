@@ -1,0 +1,13 @@
+{
+  "domain": "teacher-curriculum",
+  "version": 1,
+  "sample_id": "sample-006",
+  "students": [
+    { "ref": "stu-2022-001", "cohort": 2022, "plan_id": "P2022", "enrolled_plan_id": "P2022" },
+    { "ref": "stu-2023-001", "cohort": 2023, "plan_id": "P2023", "enrolled_plan_id": "P2023" },
+    { "ref": "stu-2024-001", "cohort": 2024, "plan_id": "P2024", "enrolled_plan_id": "P2024" },
+    { "ref": "stu-2024-002", "cohort": 2024, "plan_id": "P2024", "enrolled_plan_id": "P2023" },
+    { "ref": "stu-2025-001", "cohort": 2025, "plan_id": "P2025", "enrolled_plan_id": "P2025" },
+    { "ref": "stu-2025-002", "cohort": 2025, "plan_id": "P2025", "enrolled_plan_id": "P2025" }
+  ]
+}

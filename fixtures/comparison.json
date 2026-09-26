@@ -1,0 +1,133 @@
+{
+  "domain": "teacher-curriculum",
+  "version": 1,
+  "sample_id": "sample-006",
+  "local_context": {
+    "qualification": "本科起点+教师资格考试",
+    "credit_system": "学年学分制",
+    "practicum": "集中实习一学期",
+    "governance": "校级培养方案+省级审核"
+  },
+  "cases": [
+    {
+      "country": "芬兰",
+      "ai_course_strategy": "integrated",
+      "dimensions": {
+        "qualification": "硕士起点研究本位",
+        "credit_system": "ECTS学分制",
+        "practicum": "分散实习+大学附属学校",
+        "governance": "国家核心纲要+地方自主"
+      },
+      "borrow_conditions": { "qualification": "硕士起点研究本位" },
+      "note": "AI内容融入学科教学论,依赖硕士层次的研究训练"
+    },
+    {
+      "country": "新加坡",
+      "ai_course_strategy": "standalone_plus_integration",
+      "dimensions": {
+        "qualification": "本科起点+国家教育学院认证",
+        "credit_system": "学年学分制",
+        "practicum": "渐进式集中实习",
+        "governance": "国家主导院校实施"
+      },
+      "borrow_conditions": { "credit_system": "学年学分制" },
+      "note": "国家层面统一推进AI独立设课并融入教学法课程"
+    },
+    {
+      "country": "美国",
+      "ai_course_strategy": "standalone",
+      "dimensions": {
+        "qualification": "本科起点+州教师资格",
+        "credit_system": "学分绩点制",
+        "practicum": "州定实习时长",
+        "governance": "州认证+院校自主"
+      },
+      "borrow_conditions": { "governance": "州认证+院校自主" },
+      "note": "院校各自开设AI选修证书,缺乏统一要求"
+    },
+    {
+      "country": "英国",
+      "ai_course_strategy": "integrated",
+      "dimensions": {
+        "qualification": "本科起点+QTS认定",
+        "credit_system": "学分累积制",
+        "practicum": "学校主导长周期实习",
+        "governance": "国家课程+学校主导"
+      },
+      "borrow_conditions": { "practicum": "学校主导长周期实习" },
+      "note": "AI应用训练放在学校主导的实习中完成"
+    },
+    {
+      "country": "德国",
+      "ai_course_strategy": "integrated",
+      "dimensions": {
+        "qualification": "国家考试+见习期",
+        "credit_system": "模块学分制",
+        "practicum": "见习期一年半",
+        "governance": "州文教部管理"
+      },
+      "borrow_conditions": { "qualification": "国家考试+见习期" },
+      "note": "数字素养要求嵌在第二次国家考试与见习期中"
+    },
+    {
+      "country": "日本",
+      "ai_course_strategy": "standalone",
+      "dimensions": {
+        "qualification": "本科起点+教师资格考试",
+        "credit_system": "学年学分制",
+        "practicum": "集中实习数周",
+        "governance": "国家基准+院校实施"
+      },
+      "borrow_conditions": { "qualification": "本科起点+教师资格考试", "credit_system": "学年学分制" },
+      "note": "在教师资格课程中增设信息应用独立科目"
+    },
+    {
+      "country": "韩国",
+      "ai_course_strategy": "standalone_plus_integration",
+      "dimensions": {
+        "qualification": "本科起点+教师资格考试",
+        "credit_system": "学年学分制",
+        "practicum": "集中实习一学期",
+        "governance": "国家认证+院校自主"
+      },
+      "borrow_conditions": { "practicum": "集中实习一学期" },
+      "note": "AI数字教科书配套教师培训,独立设课与融入并行"
+    },
+    {
+      "country": "澳大利亚",
+      "ai_course_strategy": "integrated",
+      "dimensions": {
+        "qualification": "本科起点+国家统一标准认证",
+        "credit_system": "学分累积制",
+        "practicum": "专业体验分散进行",
+        "governance": "国家统一标准+院校认证"
+      },
+      "borrow_conditions": { "governance": "国家统一标准+院校认证" },
+      "note": "按国家教师标准把数字能力嵌入各课程"
+    },
+    {
+      "country": "加拿大",
+      "ai_course_strategy": "standalone",
+      "dimensions": {
+        "qualification": "本科起点+省级教师资格",
+        "credit_system": "学分累积制",
+        "practicum": "省级规定实习",
+        "governance": "省级认证"
+      },
+      "borrow_conditions": { "governance": "省级认证" },
+      "note": "各省自行决定AI课程是否独立设课"
+    },
+    {
+      "country": "爱沙尼亚",
+      "ai_course_strategy": "standalone_plus_integration",
+      "dimensions": {
+        "qualification": "本科起点+教师资格考试",
+        "credit_system": "学年学分制",
+        "practicum": "集中实习一学期",
+        "governance": "国家数字教育战略+院校实施"
+      },
+      "borrow_conditions": { "credit_system": "学年学分制", "practicum": "集中实习一学期" },
+      "note": "数字教育国家战略下独立设课与融入并行"
+    }
+  ]
+}

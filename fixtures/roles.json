@@ -1,0 +1,33 @@
+{
+  "domain": "teacher-curriculum",
+  "version": 1,
+  "sample_id": "sample-006",
+  "roles": [
+    {
+      "id": "reviewer",
+      "name": "评审专家",
+      "review_scope": { "plan_ids": ["P2024", "P2025"] },
+      "student_data": "masked"
+    },
+    {
+      "id": "program_admin",
+      "name": "教务管理员",
+      "review_scope": { "plan_ids": ["P2022", "P2023", "P2024", "P2025"] },
+      "student_data": "pseudonymous"
+    },
+    {
+      "id": "course_lead",
+      "name": "课程负责人",
+      "review_scope": { "plan_ids": ["P2025"] },
+      "student_data": "masked",
+      "course_ids": ["KC201", "KC202"]
+    },
+    {
+      "id": "mentor",
+      "name": "实习导师",
+      "review_scope": { "plan_ids": [] },
+      "student_data": "masked",
+      "assigned_students": ["stu-2025-001"]
+    }
+  ]
+}

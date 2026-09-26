@@ -1,0 +1,37 @@
+{
+  "domain": "teacher-curriculum",
+  "version": 1,
+  "sample_id": "sample-006",
+  "competencies": [
+    {
+      "id": "C1",
+      "name": "学科知识与AI时代知识更新",
+      "required_channels": ["knowledge"]
+    },
+    {
+      "id": "C2",
+      "name": "AI工具的教学应用",
+      "required_channels": ["knowledge", "practice"]
+    },
+    {
+      "id": "C3",
+      "name": "教学设计",
+      "required_channels": ["knowledge", "practice"]
+    },
+    {
+      "id": "C4",
+      "name": "课堂实施与班级管理",
+      "required_channels": ["practice", "mentor"]
+    },
+    {
+      "id": "C5",
+      "name": "教育评价与数据素养",
+      "required_channels": ["knowledge", "practice"]
+    },
+    {
+      "id": "C6",
+      "name": "教育伦理与持续专业发展",
+      "required_channels": ["knowledge", "mentor", "development"]
+    }
+  ]
+}

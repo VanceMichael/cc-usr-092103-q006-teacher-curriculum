@@ -1,0 +1,48 @@
+{
+  "domain": "teacher-curriculum",
+  "version": 1,
+  "sample_id": "sample-006",
+  "evidence": [
+    { "id": "EV-2201-01", "student_ref": "stu-2022-001", "cohort": 2022, "plan_id": "P2022", "type": "course_record", "ref_id": "KC101", "competencies": ["C1"], "summary": "修读学科基础与知识前沿", "privacy": "student_level" },
+    { "id": "EV-2201-02", "student_ref": "stu-2022-001", "cohort": 2022, "plan_id": "P2022", "type": "course_record", "ref_id": "KC202", "competencies": ["C3"], "summary": "修读学科课程与教学设计", "privacy": "student_level" },
+    { "id": "EV-2201-03", "student_ref": "stu-2022-001", "cohort": 2022, "plan_id": "P2022", "type": "course_record", "ref_id": "KC301", "competencies": ["C5"], "summary": "修读教育评价与数据分析", "privacy": "student_level" },
+    { "id": "EV-2201-04", "student_ref": "stu-2022-001", "cohort": 2022, "plan_id": "P2022", "type": "internship_task", "ref_id": "SX400", "competencies": ["C3", "C4", "C5"], "summary": "教育实习:完成授课、班级管理与课堂评价任务", "privacy": "student_level" },
+    { "id": "EV-2201-05", "student_ref": "stu-2022-001", "cohort": 2022, "plan_id": "P2022", "type": "mentor_observation", "ref_id": "SX400", "competencies": ["C4"], "summary": "实习导师课堂观察:教学组织有序", "privacy": "student_level" },
+
+    { "id": "EV-2301-01", "student_ref": "stu-2023-001", "cohort": 2023, "plan_id": "P2023", "type": "course_record", "ref_id": "KC101", "competencies": ["C1"], "summary": "修读学科基础与知识前沿", "privacy": "student_level" },
+    { "id": "EV-2301-02", "student_ref": "stu-2023-001", "cohort": 2023, "plan_id": "P2023", "type": "course_record", "ref_id": "KC202", "competencies": ["C3"], "summary": "修读学科课程与教学设计", "privacy": "student_level" },
+    { "id": "EV-2301-03", "student_ref": "stu-2023-001", "cohort": 2023, "plan_id": "P2023", "type": "course_record", "ref_id": "KC301", "competencies": ["C5"], "summary": "修读教育评价与数据分析", "privacy": "student_level" },
+    { "id": "EV-2301-04", "student_ref": "stu-2023-001", "cohort": 2023, "plan_id": "P2023", "type": "internship_task", "ref_id": "SX400", "competencies": ["C3", "C4", "C5"], "summary": "教育实习:完成授课、班级管理与课堂评价任务", "privacy": "student_level" },
+    { "id": "EV-2301-05", "student_ref": "stu-2023-001", "cohort": 2023, "plan_id": "P2023", "type": "mentor_observation", "ref_id": "SX400", "competencies": ["C4"], "summary": "实习导师课堂观察:师生互动良好", "privacy": "student_level" },
+
+    { "id": "EV-2401-01", "student_ref": "stu-2024-001", "cohort": 2024, "plan_id": "P2024", "type": "course_record", "ref_id": "KC101", "competencies": ["C1"], "summary": "修读学科基础与知识前沿", "privacy": "student_level" },
+    { "id": "EV-2401-02", "student_ref": "stu-2024-001", "cohort": 2024, "plan_id": "P2024", "type": "course_record", "ref_id": "KC201", "competencies": ["C2"], "summary": "修读AI教育应用导论(独立设课)", "privacy": "student_level" },
+    { "id": "EV-2401-03", "student_ref": "stu-2024-001", "cohort": 2024, "plan_id": "P2024", "type": "course_record", "ref_id": "KC202", "competencies": ["C3"], "summary": "修读学科课程与教学设计", "privacy": "student_level" },
+    { "id": "EV-2401-04", "student_ref": "stu-2024-001", "cohort": 2024, "plan_id": "P2024", "type": "course_record", "ref_id": "KC301", "competencies": ["C5"], "summary": "修读教育评价与数据分析", "privacy": "student_level" },
+    { "id": "EV-2401-05", "student_ref": "stu-2024-001", "cohort": 2024, "plan_id": "P2024", "type": "internship_task", "ref_id": "SX401", "competencies": ["C2", "C3", "C4", "C5"], "summary": "教育实习:完成含AI课堂任务的授课与评价", "privacy": "student_level" },
+
+    { "id": "EV-2402-01", "student_ref": "stu-2024-002", "cohort": 2024, "plan_id": "P2024", "type": "course_record", "ref_id": "KC101", "competencies": ["C1"], "summary": "修读学科基础与知识前沿", "privacy": "student_level" },
+    { "id": "EV-2402-02", "student_ref": "stu-2024-002", "cohort": 2024, "plan_id": "P2024", "type": "course_record", "ref_id": "KC201", "competencies": ["C2"], "summary": "修读AI教育应用导论(独立设课)", "privacy": "student_level" },
+    { "id": "EV-2402-03", "student_ref": "stu-2024-002", "cohort": 2024, "plan_id": "P2024", "type": "course_record", "ref_id": "KC202", "competencies": ["C3"], "summary": "修读学科课程与教学设计", "privacy": "student_level" },
+    { "id": "EV-2402-04", "student_ref": "stu-2024-002", "cohort": 2024, "plan_id": "P2024", "type": "course_record", "ref_id": "KC301", "competencies": ["C5"], "summary": "修读教育评价与数据分析", "privacy": "student_level" },
+    { "id": "EV-2402-05", "student_ref": "stu-2024-002", "cohort": 2024, "plan_id": "P2024", "type": "internship_task", "ref_id": "SX401", "competencies": ["C2", "C3", "C4", "C5"], "summary": "教育实习:完成含AI课堂任务的授课与评价", "privacy": "student_level" },
+    { "id": "EV-2402-06", "student_ref": "stu-2024-002", "cohort": 2024, "plan_id": "P2024", "type": "mentor_observation", "ref_id": "SX401", "competencies": ["C4"], "summary": "实习导师课堂观察:课堂组织达标", "privacy": "student_level" },
+
+    { "id": "EV-2501-01", "student_ref": "stu-2025-001", "cohort": 2025, "plan_id": "P2025", "type": "course_record", "ref_id": "KC101", "competencies": ["C1"], "summary": "修读学科基础与知识前沿", "privacy": "student_level" },
+    { "id": "EV-2501-02", "student_ref": "stu-2025-001", "cohort": 2025, "plan_id": "P2025", "type": "course_record", "ref_id": "KC201", "competencies": ["C2"], "summary": "修读AI教育应用导论(独立设课)", "privacy": "student_level" },
+    { "id": "EV-2501-03", "student_ref": "stu-2025-001", "cohort": 2025, "plan_id": "P2025", "type": "course_record", "ref_id": "KC202", "competencies": ["C3"], "summary": "修读学科课程与教学设计(融入AI内容)", "privacy": "student_level" },
+    { "id": "EV-2501-04", "student_ref": "stu-2025-001", "cohort": 2025, "plan_id": "P2025", "type": "course_record", "ref_id": "KC301", "competencies": ["C5"], "summary": "修读教育评价与数据分析", "privacy": "student_level" },
+    { "id": "EV-2501-05", "student_ref": "stu-2025-001", "cohort": 2025, "plan_id": "P2025", "type": "course_record", "ref_id": "KC401", "competencies": ["C6"], "summary": "修读教育伦理专题", "privacy": "student_level" },
+    { "id": "EV-2501-06", "student_ref": "stu-2025-001", "cohort": 2025, "plan_id": "P2025", "type": "tool_demo", "ref_id": "TOOL-AI-01", "competencies": ["C2"], "summary": "AI备课工具操作演示(仅知识层面)", "privacy": "student_level" },
+    { "id": "EV-2501-07", "student_ref": "stu-2025-001", "cohort": 2025, "plan_id": "P2025", "type": "internship_task", "ref_id": "SX401", "competencies": ["C2", "C3", "C4", "C5"], "summary": "教育实习:完成含AI课堂任务的授课与评价", "privacy": "student_level" },
+    { "id": "EV-2501-08", "student_ref": "stu-2025-001", "cohort": 2025, "plan_id": "P2025", "type": "mentor_observation", "ref_id": "SX401", "competencies": ["C4", "C6"], "summary": "实习导师课堂观察:课堂实施与伦理反思达标", "privacy": "student_level" },
+    { "id": "EV-2501-09", "student_ref": "stu-2025-001", "cohort": 2025, "plan_id": "P2025", "type": "postgrad_training", "ref_id": "INSERVICE-AI-01", "competencies": ["C6"], "summary": "毕业后第一年:入职学校AI教学研修", "privacy": "student_level" },
+
+    { "id": "EV-2502-01", "student_ref": "stu-2025-002", "cohort": 2025, "plan_id": "P2025", "type": "course_record", "ref_id": "KC101", "competencies": ["C1"], "summary": "修读学科基础与知识前沿", "privacy": "student_level" },
+    { "id": "EV-2502-02", "student_ref": "stu-2025-002", "cohort": 2025, "plan_id": "P2025", "type": "course_record", "ref_id": "KC201", "competencies": ["C2"], "summary": "修读AI教育应用导论(独立设课)", "privacy": "student_level" },
+    { "id": "EV-2502-03", "student_ref": "stu-2025-002", "cohort": 2025, "plan_id": "P2025", "type": "course_record", "ref_id": "KC202", "competencies": ["C3"], "summary": "修读学科课程与教学设计(融入AI内容)", "privacy": "student_level" },
+    { "id": "EV-2502-04", "student_ref": "stu-2025-002", "cohort": 2025, "plan_id": "P2025", "type": "course_record", "ref_id": "KC301", "competencies": ["C5"], "summary": "修读教育评价与数据分析", "privacy": "student_level" },
+    { "id": "EV-2502-05", "student_ref": "stu-2025-002", "cohort": 2025, "plan_id": "P2025", "type": "course_record", "ref_id": "KC401", "competencies": ["C6"], "summary": "修读教育伦理专题", "privacy": "student_level" },
+    { "id": "EV-2502-06", "student_ref": "stu-2025-002", "cohort": 2025, "plan_id": "P2025", "type": "tool_demo", "ref_id": "TOOL-AI-01", "competencies": ["C2", "C5"], "summary": "AI工具演示(不得计为实践达成)", "privacy": "student_level" }
+  ]
+}

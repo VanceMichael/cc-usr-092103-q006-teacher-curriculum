@@ -1,0 +1,82 @@
+{
+  "domain": "teacher-curriculum",
+  "version": 1,
+  "sample_id": "sample-006",
+  "courses": [
+    {
+      "id": "KC101",
+      "name": "学科基础与知识前沿",
+      "credits": 4,
+      "kind": "course",
+      "ai_mode": "none",
+      "plans": ["P2022", "P2023", "P2024", "P2025"],
+      "supports": [{ "competency": "C1", "channel": "knowledge" }]
+    },
+    {
+      "id": "KC201",
+      "name": "AI教育应用导论",
+      "credits": 2,
+      "kind": "course",
+      "ai_mode": "standalone",
+      "plans": ["P2024", "P2025"],
+      "supports": [{ "competency": "C2", "channel": "knowledge" }]
+    },
+    {
+      "id": "KC202",
+      "name": "学科课程与教学设计",
+      "credits": 3,
+      "kind": "course",
+      "ai_mode": "integrated_ai",
+      "plans": ["P2022", "P2023", "P2024", "P2025"],
+      "supports": [
+        { "competency": "C3", "channel": "knowledge" },
+        { "competency": "C2", "channel": "knowledge" }
+      ]
+    },
+    {
+      "id": "KC301",
+      "name": "教育评价与数据分析",
+      "credits": 2,
+      "kind": "course",
+      "ai_mode": "none",
+      "plans": ["P2022", "P2023", "P2024", "P2025"],
+      "supports": [{ "competency": "C5", "channel": "knowledge" }]
+    },
+    {
+      "id": "KC401",
+      "name": "教育伦理专题",
+      "credits": 2,
+      "kind": "course",
+      "ai_mode": "none",
+      "plans": ["P2025"],
+      "supports": [{ "competency": "C6", "channel": "knowledge" }]
+    },
+    {
+      "id": "SX400",
+      "name": "教育实习",
+      "credits": 8,
+      "kind": "internship",
+      "ai_mode": "none",
+      "plans": ["P2022", "P2023"],
+      "supports": [
+        { "competency": "C3", "channel": "practice" },
+        { "competency": "C4", "channel": "practice" },
+        { "competency": "C5", "channel": "practice" }
+      ]
+    },
+    {
+      "id": "SX401",
+      "name": "教育实习(含AI课堂任务)",
+      "credits": 10,
+      "kind": "internship",
+      "ai_mode": "integrated_ai",
+      "plans": ["P2024", "P2025"],
+      "supports": [
+        { "competency": "C2", "channel": "practice" },
+        { "competency": "C3", "channel": "practice" },
+        { "competency": "C4", "channel": "practice" },
+        { "competency": "C5", "channel": "practice" }
+      ]
+    }
+  ]
+}

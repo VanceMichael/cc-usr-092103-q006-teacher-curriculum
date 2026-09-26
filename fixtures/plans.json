@@ -1,0 +1,55 @@
+{
+  "domain": "teacher-curriculum",
+  "version": 1,
+  "sample_id": "sample-006",
+  "plans": [
+    {
+      "id": "P2022",
+      "cohort": 2022,
+      "title": "2022届师范生培养方案",
+      "credits": { "total": 160, "practice": 8 },
+      "ai_strategy": "integrated",
+      "required_competencies": ["C1", "C3", "C4", "C5"],
+      "objectives": ["掌握扎实学科知识", "具备基本教学与班级管理能力"]
+    },
+    {
+      "id": "P2023",
+      "cohort": 2023,
+      "title": "2023届师范生培养方案",
+      "credits": { "total": 160, "practice": 8 },
+      "ai_strategy": "integrated",
+      "required_competencies": ["C1", "C3", "C4", "C5"],
+      "objectives": ["掌握扎实学科知识", "具备基本教学与班级管理能力", "在现有课程中接触教育技术"]
+    },
+    {
+      "id": "P2024",
+      "cohort": 2024,
+      "title": "2024届师范生培养方案",
+      "credits": { "total": 164, "practice": 10 },
+      "ai_strategy": "standalone",
+      "required_competencies": ["C1", "C2", "C3", "C4", "C5"],
+      "objectives": ["掌握扎实学科知识", "具备基本教学与班级管理能力", "能够独立使用AI工具开展教学"]
+    },
+    {
+      "id": "P2025",
+      "cohort": 2025,
+      "title": "2025届师范生培养方案",
+      "credits": { "total": 164, "practice": 10 },
+      "ai_strategy": "standalone_plus_integration",
+      "required_competencies": ["C1", "C2", "C3", "C4", "C5", "C6"],
+      "objectives": ["掌握扎实学科知识", "具备基本教学与班级管理能力", "能够独立使用AI工具开展教学", "形成贯穿职前职后的伦理反思与持续发展能力"]
+    }
+  ],
+  "credit_rule_changes": [
+    {
+      "id": "CR-2024",
+      "from_plan": "P2023",
+      "to_plan": "P2024",
+      "field": "credits.practice",
+      "from": 8,
+      "to": 10,
+      "applies_to_cohorts": [2024, 2025],
+      "note": "教育实践学分由8调整为10;按旧规则入学但按新方案毕业的学生需补修差额学分"
+    }
+  ]
+}
