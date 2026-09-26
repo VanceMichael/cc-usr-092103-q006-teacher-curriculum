@@ -1,0 +1,49 @@
+{
+  "domain": "teacher-curriculum",
+  "version": 1,
+  "programs": [
+    {
+      "id": "prog-2021",
+      "cohort": 2021,
+      "version": 1,
+      "credit_rules": { "total": 160, "practice_min": 10 },
+      "course_design": [
+        { "competency": "comp-ai-concepts", "mode": "integrated", "courses": ["course-edu-tech"] },
+        { "competency": "comp-ai-classroom", "mode": "integrated", "courses": ["course-teaching-method", "course-practicum"] },
+        { "competency": "comp-reflective", "mode": "integrated", "courses": ["course-practicum"] }
+      ]
+    },
+    {
+      "id": "prog-2022",
+      "cohort": 2022,
+      "version": 2,
+      "credit_rules": { "total": 160, "practice_min": 10 },
+      "course_design": [
+        { "competency": "comp-ai-concepts", "mode": "integrated", "courses": ["course-edu-tech"] },
+        { "competency": "comp-ai-ethics", "mode": "integrated", "courses": ["course-edu-tech"] },
+        { "competency": "comp-ai-classroom", "mode": "integrated", "courses": ["course-teaching-method", "course-practicum"] },
+        { "competency": "comp-reflective", "mode": "integrated", "courses": ["course-practicum"] }
+      ]
+    },
+    {
+      "id": "prog-2023",
+      "cohort": 2023,
+      "version": 3,
+      "credit_rules": { "total": 162, "practice_min": 14 },
+      "course_design": [
+        { "competency": "comp-ai-concepts", "mode": "integrated", "courses": ["course-edu-tech"] },
+        { "competency": "comp-ai-ethics", "mode": "standalone", "courses": ["course-ai-ethics"] },
+        { "competency": "comp-ai-classroom", "mode": "integrated", "courses": ["course-teaching-method", "course-practicum"] },
+        { "competency": "comp-data-assessment", "mode": "standalone", "courses": ["course-data-literacy"] },
+        { "competency": "comp-reflective", "mode": "integrated", "courses": ["course-practicum"] }
+      ],
+      "transition": {
+        "applies_to_cohorts": [2022],
+        "supplementary": [
+          { "module": "course-ai-ethics", "credits": 2, "reason": "AI伦理由融入调整为独立设课，并轨学生需补修该模块" },
+          { "module": "course-practicum", "credits": 4, "reason": "实践学分下限由10提高到14，并轨学生需补足差额" }
+        ]
+      }
+    }
+  ]
+}

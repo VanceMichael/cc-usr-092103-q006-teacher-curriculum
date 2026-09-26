@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "历次培养方案",
+  "type": "object",
+  "required": [
+    "domain",
+    "version",
+    "programs"
+  ],
+  "properties": {
+    "domain": {
+      "const": "teacher-curriculum"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "programs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "cohort",
+          "version",
+          "credit_rules",
+          "course_design"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cohort": {
+            "type": "integer",
+            "minimum": 2000
+          },
+          "version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "credit_rules": {
+            "type": "object",
+            "required": [
+              "total",
+              "practice_min"
+            ],
+            "properties": {
+              "total": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "practice_min": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "additionalProperties": false
+          },
+          "course_design": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "competency",
+                "mode",
+                "courses"
+              ],
+              "properties": {
+                "competency": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "mode": {
+                  "enum": [
+                    "standalone",
+                    "integrated"
+                  ]
+                },
+                "courses": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "transition": {
+            "type": "object",
+            "required": [
+              "applies_to_cohorts",
+              "supplementary"
+            ],
+            "properties": {
+              "applies_to_cohorts": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "integer",
+                  "minimum": 2000
+                }
+              },
+              "supplementary": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "module",
+                    "credits",
+                    "reason"
+                  ],
+                  "properties": {
+                    "module": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "credits": {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    "reason": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

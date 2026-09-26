@@ -1,0 +1,42 @@
+{
+  "domain": "teacher-curriculum",
+  "version": 1,
+  "roles": [
+    {
+      "role": "program-admin",
+      "label": "培养方案管理员",
+      "permissions": ["read:summary", "read:evidence", "write:program", "approve:program", "read:comparison"],
+      "privacy_clearance": "restricted",
+      "cohort_scope": "all"
+    },
+    {
+      "role": "reviewer-internal",
+      "label": "校内评审专家",
+      "permissions": ["read:summary", "read:evidence", "read:comparison"],
+      "privacy_clearance": "restricted",
+      "cohort_scope": [2022, 2023]
+    },
+    {
+      "role": "reviewer-external",
+      "label": "校外评审专家",
+      "permissions": ["read:summary", "read:evidence", "read:comparison"],
+      "privacy_clearance": "internal",
+      "cohort_scope": [2023]
+    },
+    {
+      "role": "mentor",
+      "label": "实习导师",
+      "permissions": ["create:evidence:mentor_observation", "read:summary"],
+      "privacy_clearance": "internal",
+      "cohort_scope": [2022, 2023]
+    },
+    {
+      "role": "alumni-office",
+      "label": "校友发展办公室",
+      "permissions": ["read:summary", "read:evidence"],
+      "privacy_clearance": "internal",
+      "cohort_scope": "all",
+      "evidence_period_scope": ["in-service"]
+    }
+  ]
+}

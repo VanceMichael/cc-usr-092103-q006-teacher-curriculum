@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "角色范围",
+  "type": "object",
+  "required": [
+    "domain",
+    "version",
+    "roles"
+  ],
+  "properties": {
+    "domain": {
+      "const": "teacher-curriculum"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "roles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "role",
+          "label",
+          "permissions",
+          "privacy_clearance",
+          "cohort_scope"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "permissions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "privacy_clearance": {
+            "enum": [
+              "public",
+              "internal",
+              "restricted"
+            ]
+          },
+          "cohort_scope": {
+            "oneOf": [
+              {
+                "const": "all"
+              },
+              {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "integer",
+                  "minimum": 2000
+                }
+              }
+            ]
+          },
+          "evidence_period_scope": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "enum": [
+                "pre-service",
+                "in-service"
+              ]
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,48 @@
+{
+  "domain": "teacher-curriculum",
+  "version": 1,
+  "competencies": [
+    {
+      "id": "comp-ai-concepts",
+      "name": "AI基础概念与知识边界",
+      "statement": "理解人工智能的基本原理、能力边界与局限，知道何种问题不能交给AI回答",
+      "requires": {
+        "knowledge": { "min_items": 1, "types": ["course_record", "tool_demo"] }
+      }
+    },
+    {
+      "id": "comp-ai-ethics",
+      "name": "AI伦理与学术诚信",
+      "statement": "在教学中负责任地使用AI，并引导学生诚信使用生成式工具",
+      "requires": {
+        "knowledge": { "min_items": 1, "types": ["course_record"] }
+      }
+    },
+    {
+      "id": "comp-ai-classroom",
+      "name": "AI工具课堂整合",
+      "statement": "在真实课堂中选择、调整并评估AI工具的教学使用",
+      "requires": {
+        "knowledge": { "min_items": 1, "types": ["course_record"] },
+        "practice": { "min_items": 2, "types": ["internship_task", "mentor_observation"], "distinct_types": 2 }
+      }
+    },
+    {
+      "id": "comp-data-assessment",
+      "name": "学习数据评价与反馈",
+      "statement": "依据学习数据设计评价、给出反馈并保护学生数据",
+      "requires": {
+        "knowledge": { "min_items": 1, "types": ["course_record"] },
+        "practice": { "min_items": 2, "types": ["internship_task", "mentor_observation"], "distinct_types": 2 }
+      }
+    },
+    {
+      "id": "comp-reflective",
+      "name": "反思性实践与专业发展",
+      "statement": "在导师支持下反思实践，并把职前学习延续到入职后的持续发展",
+      "requires": {
+        "practice": { "min_items": 1, "types": ["mentor_observation"] }
+      }
+    }
+  ]
+}

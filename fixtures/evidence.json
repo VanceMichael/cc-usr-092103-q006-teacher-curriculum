@@ -1,0 +1,171 @@
+{
+  "domain": "teacher-curriculum",
+  "version": 1,
+  "evidence": [
+    {
+      "id": "ev-c001",
+      "type": "course_record",
+      "competencies": ["comp-ai-concepts"],
+      "cohort": 2021,
+      "period": "pre-service",
+      "privacy_level": "internal",
+      "source": "course-edu-tech",
+      "subject_ref": "stu-anon-01",
+      "summary": "教育技术学课程修读记录"
+    },
+    {
+      "id": "ev-c002",
+      "type": "course_record",
+      "competencies": ["comp-ai-concepts", "comp-ai-ethics"],
+      "cohort": 2022,
+      "period": "pre-service",
+      "privacy_level": "internal",
+      "source": "course-edu-tech",
+      "subject_ref": "stu-anon-02",
+      "summary": "教育技术学融入AI伦理单元的修读记录"
+    },
+    {
+      "id": "ev-c003",
+      "type": "course_record",
+      "competencies": ["comp-ai-classroom"],
+      "cohort": 2022,
+      "period": "pre-service",
+      "privacy_level": "internal",
+      "source": "course-teaching-method",
+      "subject_ref": "stu-anon-02",
+      "summary": "学科教学法AI整合单元的修读记录"
+    },
+    {
+      "id": "ev-c004",
+      "type": "internship_task",
+      "competencies": ["comp-ai-classroom"],
+      "cohort": 2022,
+      "period": "pre-service",
+      "privacy_level": "internal",
+      "source": "school-partner-01",
+      "subject_ref": "stu-anon-02",
+      "summary": "实习期间设计并实施AI辅助阅读课任务"
+    },
+    {
+      "id": "ev-c005",
+      "type": "tool_demo",
+      "competencies": ["comp-ai-classroom"],
+      "cohort": 2022,
+      "period": "pre-service",
+      "privacy_level": "public",
+      "source": "vendor-workshop-01",
+      "subject_ref": "stu-anon-02",
+      "summary": "公开教研活动上的一次AI工具演示"
+    },
+    {
+      "id": "ev-c006",
+      "type": "course_record",
+      "competencies": ["comp-ai-ethics"],
+      "cohort": 2023,
+      "period": "pre-service",
+      "privacy_level": "internal",
+      "source": "course-ai-ethics",
+      "subject_ref": "stu-anon-03",
+      "summary": "人工智能教育伦理独立设课修读记录"
+    },
+    {
+      "id": "ev-c007",
+      "type": "course_record",
+      "competencies": ["comp-data-assessment"],
+      "cohort": 2023,
+      "period": "pre-service",
+      "privacy_level": "internal",
+      "source": "course-data-literacy",
+      "subject_ref": "stu-anon-03",
+      "summary": "学习分析与数据素养修读记录"
+    },
+    {
+      "id": "ev-c008",
+      "type": "internship_task",
+      "competencies": ["comp-ai-classroom", "comp-data-assessment"],
+      "cohort": 2023,
+      "period": "pre-service",
+      "privacy_level": "restricted",
+      "source": "school-partner-02",
+      "subject_ref": "stu-anon-03",
+      "summary": "实习课堂中使用学习数据调整教学，材料含学生作业数据"
+    },
+    {
+      "id": "ev-c009",
+      "type": "mentor_observation",
+      "competencies": ["comp-ai-classroom"],
+      "cohort": 2023,
+      "period": "pre-service",
+      "privacy_level": "internal",
+      "source": "mentor-obs-01",
+      "subject_ref": "stu-anon-03",
+      "summary": "实习导师对AI整合课堂的观察记录"
+    },
+    {
+      "id": "ev-c010",
+      "type": "mentor_observation",
+      "competencies": ["comp-reflective"],
+      "cohort": 2023,
+      "period": "pre-service",
+      "privacy_level": "internal",
+      "source": "mentor-obs-01",
+      "subject_ref": "stu-anon-03",
+      "summary": "导师对反思日志与改进计划的观察评语"
+    },
+    {
+      "id": "ev-c011",
+      "type": "pd_record",
+      "competencies": ["comp-reflective"],
+      "cohort": 2021,
+      "period": "in-service",
+      "privacy_level": "internal",
+      "source": "pd-program-01",
+      "subject_ref": "stu-anon-01",
+      "summary": "入职第二年完成反思性实践研修"
+    },
+    {
+      "id": "ev-c012",
+      "type": "course_record",
+      "competencies": ["comp-ai-concepts"],
+      "cohort": 2023,
+      "period": "pre-service",
+      "privacy_level": "internal",
+      "source": "course-edu-tech",
+      "subject_ref": "stu-anon-03",
+      "summary": "教育技术学课程修读记录"
+    },
+    {
+      "id": "ev-c013",
+      "type": "mentor_observation",
+      "competencies": ["comp-reflective"],
+      "cohort": 2022,
+      "period": "pre-service",
+      "privacy_level": "internal",
+      "source": "mentor-obs-02",
+      "subject_ref": "stu-anon-02",
+      "summary": "实习导师对阶段性反思的观察记录"
+    },
+    {
+      "id": "ev-c014",
+      "type": "pd_record",
+      "competencies": ["comp-data-assessment"],
+      "cohort": 2023,
+      "period": "in-service",
+      "privacy_level": "internal",
+      "source": "pd-program-02",
+      "subject_ref": "stu-anon-03",
+      "summary": "入职初期完成数据评价专题研修并提交课堂应用报告"
+    },
+    {
+      "id": "ev-c015",
+      "type": "course_record",
+      "competencies": ["comp-ai-classroom"],
+      "cohort": 2023,
+      "period": "pre-service",
+      "privacy_level": "internal",
+      "source": "course-teaching-method",
+      "subject_ref": "stu-anon-03",
+      "summary": "学科教学法AI整合单元的修读记录"
+    }
+  ]
+}

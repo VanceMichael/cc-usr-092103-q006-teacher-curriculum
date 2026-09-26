@@ -1,0 +1,174 @@
+{
+  "domain": "teacher-curriculum",
+  "version": 1,
+  "dimensions": [
+    { "key": "teacher_education_model", "label": "培养模式" },
+    { "key": "practicum_weeks", "label": "实践周数" },
+    { "key": "ai_curriculum_policy", "label": "AI课程政策" },
+    { "key": "certification_body", "label": "资格认证主体" },
+    { "key": "induction_requirement", "label": "入职研修要求" },
+    { "key": "student_data_regime", "label": "学生数据制度" }
+  ],
+  "local_context": {
+    "teacher_education_model": "concurrent",
+    "practicum_weeks": 18,
+    "ai_curriculum_policy": "national-framework",
+    "certification_body": "national",
+    "induction_requirement": "mandatory",
+    "student_data_regime": "comprehensive-law"
+  },
+  "countries": [
+    {
+      "code": "CN",
+      "name": "中国",
+      "dimensions": {
+        "teacher_education_model": "concurrent",
+        "practicum_weeks": 18,
+        "ai_curriculum_policy": "national-framework",
+        "certification_body": "national",
+        "induction_requirement": "mandatory",
+        "student_data_regime": "comprehensive-law"
+      }
+    },
+    {
+      "code": "FI",
+      "name": "芬兰",
+      "dimensions": {
+        "teacher_education_model": "concurrent",
+        "practicum_weeks": 24,
+        "ai_curriculum_policy": "institutional-autonomy",
+        "certification_body": "national",
+        "induction_requirement": "optional",
+        "student_data_regime": "comprehensive-law"
+      }
+    },
+    {
+      "code": "SG",
+      "name": "新加坡",
+      "dimensions": {
+        "teacher_education_model": "concurrent",
+        "practicum_weeks": 22,
+        "ai_curriculum_policy": "national-framework",
+        "certification_body": "national",
+        "induction_requirement": "mandatory",
+        "student_data_regime": "comprehensive-law"
+      }
+    },
+    {
+      "code": "US",
+      "name": "美国",
+      "dimensions": {
+        "teacher_education_model": "mixed",
+        "practicum_weeks": 16,
+        "ai_curriculum_policy": "institutional-autonomy",
+        "certification_body": "regional",
+        "induction_requirement": "optional",
+        "student_data_regime": "sectoral-law"
+      }
+    },
+    {
+      "code": "UK",
+      "name": "英国",
+      "dimensions": {
+        "teacher_education_model": "consecutive",
+        "practicum_weeks": 24,
+        "ai_curriculum_policy": "institutional-autonomy",
+        "certification_body": "national",
+        "induction_requirement": "mandatory",
+        "student_data_regime": "comprehensive-law"
+      }
+    },
+    {
+      "code": "DE",
+      "name": "德国",
+      "dimensions": {
+        "teacher_education_model": "consecutive",
+        "practicum_weeks": 20,
+        "ai_curriculum_policy": "institutional-autonomy",
+        "certification_body": "regional",
+        "induction_requirement": "mandatory",
+        "student_data_regime": "comprehensive-law"
+      }
+    },
+    {
+      "code": "JP",
+      "name": "日本",
+      "dimensions": {
+        "teacher_education_model": "concurrent",
+        "practicum_weeks": 12,
+        "ai_curriculum_policy": "national-framework",
+        "certification_body": "national",
+        "induction_requirement": "mandatory",
+        "student_data_regime": "comprehensive-law"
+      }
+    },
+    {
+      "code": "KR",
+      "name": "韩国",
+      "dimensions": {
+        "teacher_education_model": "concurrent",
+        "practicum_weeks": 12,
+        "ai_curriculum_policy": "national-framework",
+        "certification_body": "national",
+        "induction_requirement": "mandatory",
+        "student_data_regime": "comprehensive-law"
+      }
+    },
+    {
+      "code": "AU",
+      "name": "澳大利亚",
+      "dimensions": {
+        "teacher_education_model": "mixed",
+        "practicum_weeks": 18,
+        "ai_curriculum_policy": "national-framework",
+        "certification_body": "regional",
+        "induction_requirement": "mandatory",
+        "student_data_regime": "comprehensive-law"
+      }
+    },
+    {
+      "code": "CA",
+      "name": "加拿大",
+      "dimensions": {
+        "teacher_education_model": "consecutive",
+        "practicum_weeks": 16,
+        "ai_curriculum_policy": "institutional-autonomy",
+        "certification_body": "regional",
+        "induction_requirement": "optional",
+        "student_data_regime": "sectoral-law"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "id": "case-sg-standalone-ai",
+      "country": "SG",
+      "title": "国家框架下独立开设AI教育课程",
+      "summary": "在国家AI课程框架内由师范院校独立设课，并与资格认证挂钩",
+      "requires": [
+        { "dimension": "ai_curriculum_policy", "equals": "national-framework", "critical": true },
+        { "dimension": "certification_body", "equals": "national" }
+      ]
+    },
+    {
+      "id": "case-fi-clinical-practicum",
+      "country": "FI",
+      "title": "大学附属学校临床式实习与导师观察",
+      "summary": "长周期临床实习，导师观察记录作为实践达成的核心证据",
+      "requires": [
+        { "dimension": "teacher_education_model", "equals": "concurrent" },
+        { "dimension": "practicum_weeks", "min": 20 }
+      ]
+    },
+    {
+      "id": "case-us-micro-credential",
+      "country": "US",
+      "title": "微认证衔接职前培养与在职研修",
+      "summary": "以院校自主的微认证把职前学习成果带入入职后的研修体系",
+      "requires": [
+        { "dimension": "ai_curriculum_policy", "equals": "institutional-autonomy", "critical": true },
+        { "dimension": "induction_requirement", "in": ["optional", "mandatory"] }
+      ]
+    }
+  ]
+}

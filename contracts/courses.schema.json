@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "校内课程目录",
+  "type": "object",
+  "required": [
+    "domain",
+    "version",
+    "courses"
+  ],
+  "properties": {
+    "domain": {
+      "const": "teacher-curriculum"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "courses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "credits",
+          "channel",
+          "competencies",
+          "offered_from"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "credits": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "channel": {
+            "enum": [
+              "knowledge",
+              "practice"
+            ]
+          },
+          "competencies": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "offered_from": {
+            "type": "integer",
+            "minimum": 2000
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

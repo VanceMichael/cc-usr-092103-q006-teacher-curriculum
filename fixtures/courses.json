@@ -1,0 +1,46 @@
+{
+  "domain": "teacher-curriculum",
+  "version": 1,
+  "courses": [
+    {
+      "id": "course-edu-tech",
+      "title": "教育技术学",
+      "credits": 3,
+      "channel": "knowledge",
+      "competencies": ["comp-ai-concepts"],
+      "offered_from": 2019
+    },
+    {
+      "id": "course-teaching-method",
+      "title": "学科教学法",
+      "credits": 3,
+      "channel": "knowledge",
+      "competencies": ["comp-ai-classroom"],
+      "offered_from": 2019
+    },
+    {
+      "id": "course-practicum",
+      "title": "教育实习",
+      "credits": 10,
+      "channel": "practice",
+      "competencies": ["comp-ai-classroom", "comp-reflective"],
+      "offered_from": 2019
+    },
+    {
+      "id": "course-ai-ethics",
+      "title": "人工智能教育伦理",
+      "credits": 2,
+      "channel": "knowledge",
+      "competencies": ["comp-ai-ethics"],
+      "offered_from": 2023
+    },
+    {
+      "id": "course-data-literacy",
+      "title": "学习分析与数据素养",
+      "credits": 2,
+      "channel": "knowledge",
+      "competencies": ["comp-data-assessment"],
+      "offered_from": 2023
+    }
+  ]
+}

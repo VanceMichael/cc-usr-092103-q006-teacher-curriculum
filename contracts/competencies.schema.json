@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "培养目标能力",
+  "type": "object",
+  "required": [
+    "domain",
+    "version",
+    "competencies"
+  ],
+  "properties": {
+    "domain": {
+      "const": "teacher-curriculum"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "competencies": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "requires"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "statement": {
+            "type": "string"
+          },
+          "requires": {
+            "type": "object",
+            "minProperties": 1,
+            "properties": {
+              "knowledge": {
+                "$ref": "#/$defs/channel"
+              },
+              "practice": {
+                "$ref": "#/$defs/channel"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "channel": {
+      "type": "object",
+      "required": [
+        "min_items",
+        "types"
+      ],
+      "properties": {
+        "min_items": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "types": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "course_record",
+              "tool_demo",
+              "internship_task",
+              "mentor_observation",
+              "pd_record"
+            ]
+          }
+        },
+        "distinct_types": {
+          "type": "integer",
+          "minimum": 2
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

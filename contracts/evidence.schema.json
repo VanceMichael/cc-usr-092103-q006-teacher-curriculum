@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "证据材料",
+  "type": "object",
+  "required": [
+    "domain",
+    "version",
+    "evidence"
+  ],
+  "properties": {
+    "domain": {
+      "const": "teacher-curriculum"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "competencies",
+          "cohort",
+          "period",
+          "privacy_level",
+          "source",
+          "subject_ref",
+          "summary"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "enum": [
+              "course_record",
+              "tool_demo",
+              "internship_task",
+              "mentor_observation",
+              "pd_record"
+            ]
+          },
+          "competencies": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "cohort": {
+            "type": "integer",
+            "minimum": 2000
+          },
+          "period": {
+            "enum": [
+              "pre-service",
+              "in-service"
+            ]
+          },
+          "privacy_level": {
+            "enum": [
+              "public",
+              "internal",
+              "restricted"
+            ]
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "subject_ref": {
+            "type": "string",
+            "pattern": "^stu-anon-",
+            "description": "学生引用必须匿名化，不得出现真实姓名或学号"
+          },
+          "summary": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
